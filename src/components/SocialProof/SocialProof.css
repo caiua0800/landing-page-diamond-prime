@@ -1,0 +1,108 @@
+/* --- ESTILO GERAL DA SEÇÃO --- */
+.social-proof-section {
+  overflow: hidden;
+}
+
+/* --- PARTE SUPERIOR (BRANCA) --- */
+.proof-top {
+  padding: 120px 6%;
+  background-color: #ffffff;
+}
+.social-proof-container {
+  max-width: 1200px; margin: 0 auto; display: flex;
+  align-items: center; gap: 60px;
+}
+.chart-column { flex: 1.2; }
+.chart-title { font-size: 1.5rem; font-weight: 600; color: #1D1D1F; text-align: center; margin-bottom: 30px; }
+.content-column { flex: 1; text-align: left; }
+.proof-title { font-size: 2.8rem; font-weight: 800; color: #1D1D1F; margin: 10px 0 25px 0; }
+.stats-container { margin-bottom: 40px; }
+.stat-item { background-color: #f4f4f5; border-radius: 16px; padding: 25px; text-align: center; }
+.stat-value { display: block; font-size: 3.5rem; font-weight: 700; color: #DEAB43; line-height: 1; }
+.stat-label { display: block; font-size: 1rem; color: #5a5a5c; margin-top: 10px; }
+
+/* --- ADIÇÃO: REMOVER O OUTLINE DO GRÁFICO --- */
+.recharts-surface:focus {
+  outline: none;
+}
+
+
+/* --- FAIXA PRETA INFERIOR --- */
+.testimonial-ticker-section {
+  background-color: #1D1D1F;
+  padding: 20px 0;
+  border-top: 1px solid #333;
+  width: 100%;
+  overflow: hidden; 
+}
+
+.ticker-header {
+  text-align: center;
+  margin-bottom: 40px;
+  padding: 0 20px;
+}
+.ticker-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin: 0;
+}
+.ticker-subtitle {
+  font-size: 1rem;
+  color: #a0a0a0;
+  margin-top: 10px;
+}
+
+.ticker-wrapper {
+  display: flex;
+  animation: ticker-scroll 40s linear infinite;
+  width: max-content;
+}
+
+.testimonial-ticker-section:hover .ticker-wrapper {
+  animation-play-state: paused;
+}
+
+@keyframes ticker-scroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.testimonial-item {
+  width: 400px; margin: 0 20px; padding: 25px;
+  background-color: #2a2a2e; border-radius: 16px;
+  border: 1px solid #333; display: flex;
+  flex-direction: column; gap: 15px;
+}
+
+.testimonial-header { display: flex; align-items: center; gap: 15px; }
+.avatar {
+  width: 45px; height: 45px; border-radius: 50%;
+  background-color: #333; display: flex; align-items: center;
+  justify-content: center; color: #5a5a5c; font-size: 1.2rem;
+  flex-shrink: 0;
+}
+.author-info { flex-grow: 1; }
+.author-name { font-weight: 600; color: #ffffff; display: block; }
+.author-status { font-size: 0.8rem; color: #a0a0a0; }
+.star-rating { color: #DEAB43; font-size: 0.9rem; }
+.testimonial-quote { font-style: italic; font-size: 1rem; color: #dcdcdc; line-height: 1.6; }
+
+
+/* --- INÍCIO DA RESPONSIVIDADE (COM CORREÇÕES) --- */
+@media (max-width: 992px) {
+  .social-proof-container {
+    flex-direction: column;
+    gap: 50px;
+  }
+
+  /* --- CORREÇÃO DE ORDEM --- */
+  .content-column {
+    text-align: center;
+    order: 1; /* O texto agora vem primeiro */
+  }
+  .chart-column {
+    order: 2; /* O gráfico vem depois */
+  }
+  /* --- FIM DA CORREÇÃO --- */
+}

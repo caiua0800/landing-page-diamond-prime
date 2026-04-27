@@ -1,0 +1,215 @@
+.header-section-fixed {
+  position: absolute;
+  /* Header fixo que acompanha a rolagem */
+  top: 0;
+  left: 0;
+  background-color: #1D1D1F;
+  padding: 20px 6%;
+  width: 100%;
+  box-sizing: border-box;
+  border-bottom: 1px solid #333;
+  z-index: 1000;
+  /* Z-index base do header */
+}
+
+.header-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* --- LADO ESQUERDO: MARCA --- */
+.header-brand-link {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  text-decoration: none;
+}
+
+.header-logo {
+  height: 45px;
+  width: auto;
+}
+
+.brand-text {
+  color: #ffffff;
+  text-align: left;
+}
+
+.brand-text span {
+  font-size: 1.2rem;
+  font-weight: 600;
+  display: block;
+}
+
+.brand-text small {
+  font-size: 0.8rem;
+  color: #a0a0a0;
+}
+
+/* --- LADO DIREITO: LINKS E CTA --- */
+.header-right-content {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.nav-links-desktop {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  list-style: none;
+}
+
+.nav-links-desktop button {
+  background: none;
+  border: none;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #dcdcdc;
+  cursor: pointer;
+  padding: 10px 20px;
+  border-radius: 50px;
+  position: relative;
+  transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.nav-links-desktop button:hover {
+  color: #ffffff;
+  background-color: #2a2a2e;
+}
+
+.header-cta-secondary {
+  background-color: #DEAB43;
+  color: #1D1D1F;
+  border: none;
+  padding: 10px 25px;
+  border-radius: 50px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.header-cta-secondary:hover {
+  background-color: #ffd277;
+  transform: translateY(-2px);
+}
+
+
+/* --- MENU MOBILE --- */
+.hamburger-menu {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  z-index: 10000;
+  /* Z-index ALTO para o hamburger ficar na frente do menu */
+  width: 30px;
+  height: 22px;
+  position: relative;
+}
+
+.hamburger-menu span {
+  display: block;
+  width: 100%;
+  height: 3px;
+  background-color: #ffffff;
+  border-radius: 3px;
+  position: absolute;
+  transition: transform 0.3s ease, opacity 0.3s ease, background-color 0.3s ease;
+}
+
+.hamburger-menu span:nth-child(1) {
+  top: 0;
+}
+
+.hamburger-menu span:nth-child(2) {
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.hamburger-menu span:nth-child(3) {
+  bottom: 0;
+}
+
+/* Animação para "X" */
+.hamburger-menu.active span {
+  background-color: #DEAB43;
+  /* Cor dourada quando o menu está aberto */
+}
+
+.hamburger-menu.active span:nth-child(1) {
+  transform: rotate(45deg);
+  top: 50%;
+}
+
+.hamburger-menu.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger-menu.active span:nth-child(3) {
+  transform: rotate(-45deg);
+  top: 50%;
+}
+
+
+/* Camada de fundo do menu mobile */
+.nav-mobile-wrapper {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(18, 18, 18, 0.85);
+  backdrop-filter: blur(15px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  /* Z-INDEX MUITO ALTO para ficar na frente de TUDO */
+}
+
+/* Lista de links no mobile */
+.nav-links-mobile {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 35px;
+  padding: 0;
+}
+
+.nav-links-mobile button {
+  background: none;
+  border: none;
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #ffffff;
+  transition: color 0.3s ease;
+}
+
+.nav-links-mobile button:hover {
+  color: #DEAB43;
+}
+
+.header-cta-secondary.mobile {
+  margin-top: 20px;
+  width: 250px;
+  padding: 15px 25px;
+  font-size: 1.2rem;
+}
+
+
+/* --- RESPONSIVIDADE --- */
+@media (max-width: 992px) {
+  .header-right-content {
+    display: none;
+  }
+
+  .hamburger-menu {
+    display: block;
+  }
+}

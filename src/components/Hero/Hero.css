@@ -1,0 +1,204 @@
+/* Importando as fontes */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap');
+
+.hero-section {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  min-height: 100vh;
+  background-color: #ffffff;
+  padding: 0 6%;
+  overflow-x: hidden;
+  /* Permite scroll vertical mas previne horizontal */
+  margin-top: 80px;
+}
+
+/* Pseudo-elemento que cria o fundo cinza diagonal */
+.hero-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #f4f4f5;
+  clip-path: polygon(25% 100%, 80% 0, 100% 0, 100% 100%);
+  z-index: 0;
+}
+
+/* NOVO CONTAINER PRINCIPAL */
+.hero-main-container {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+}
+
+/* Coluna de texto no desktop */
+.hero-text-content {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+  gap: 30px;
+  padding-right: 40px;
+}
+
+/* Imagem para a visualização em desktop */
+.hero-visual-desktop {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* A imagem para mobile começa escondida no desktop */
+.hero-visual-mobile {
+  display: none;
+}
+
+.hero-highlight {
+  font-size: 0.9rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #E6AA3A;
+}
+
+.hero-title {
+  font-size: 3.8rem;
+  font-weight: 800;
+  color: #1D1D1F;
+  line-height: 1.2;
+}
+
+.hero-subtitle {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #5a5a5c;
+  max-width: 500px;
+}
+
+.hero-cta-button {
+  width: 220px;
+  height: 50px;
+  border: none;
+  border-radius: 10px;
+  background: linear-gradient(to right, #77530a, #ffd277, #77530a, #77530a, #ffd277, #77530a);
+  background-size: 250%;
+  background-position: left;
+  color: #ffd277;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  cursor: pointer;
+  transition-duration: 1s;
+  overflow: hidden;
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.hero-cta-button::before {
+  position: absolute;
+  content: "";
+  width: 98%;
+  height: 93%;
+  border-radius: 9px;
+  transition-duration: 2s;
+  background-color: #1D1D1F;
+}
+
+.hero-cta-button span,
+.hero-cta-button i {
+  position: relative;
+  z-index: 2;
+}
+
+.hero-cta-button:hover {
+  background-position: right;
+  transition-duration: 1s;
+}
+
+.hero-cta-button:active {
+  transform: scale(0.95);
+}
+
+.hero-diamond-image {
+  width: 100%;
+  max-width: 580px;
+  height: auto;
+  filter: drop-shadow(0px 0px 60px rgba(230, 170, 58, 0.4));
+}
+
+/* --- CORREÇÃO PARA O LINK DO BOTÃO HERO --- */
+.hero-text-content a {
+  text-decoration: none;
+  /* Remove o sublinhado */
+}
+
+
+/* --- INÍCIO DA RESPONSIVIDADE --- */
+
+/* Para Tablets e Telas Menores (até 1024px) */
+@media (max-width: 1024px) {
+  .hero-section {
+    padding: 120px 0% 80px;
+    min-height: auto;
+  }
+
+  .hero-main-container {
+    flex-direction: column;
+  }
+
+  /* Esconde a imagem de desktop */
+  .hero-visual-desktop {
+    display: none;
+  }
+
+  /* Mostra a imagem de mobile */
+  .hero-visual-mobile {
+    display: block;
+    width: 100%;
+    margin-left: 150px;
+    text-align: center;
+    /* Garante que a imagem centralize se for menor */
+  }
+
+  .hero-text-content {
+    width: 100%;
+    align-items: center;
+    text-align: center;
+    padding-right: 0;
+  }
+
+  .hero-section::before {
+    /* Ajusta a diagonal para um layout vertical */
+    clip-path: polygon(0 65%, 100% 30%, 100% 100%, 0 100%);
+  }
+
+  .hero-title {
+    font-size: 2.8rem;
+  }
+}
+
+/* Para Celulares (até 480px) */
+@media (max-width: 480px) {
+  .hero-title {
+    font-size: 2.2rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1rem;
+  }
+
+  .hero-diamond-image {
+    max-width: 80%;
+    /* Reduz a imagem para não dominar a tela */
+  }
+}

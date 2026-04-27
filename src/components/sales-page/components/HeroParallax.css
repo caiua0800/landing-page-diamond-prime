@@ -1,0 +1,95 @@
+.hero-parallax-container {
+    /* height: 180vh; */
+    /* Shorter than 300vh since we don't have as much scroll travel needed */
+    padding: 10rem 1rem 5rem;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    perspective: 1000px;
+    background: #141414;
+}
+
+.parallax-header {
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+    margin-bottom: 20rem;
+    /* Increased to push cards down initially */
+    z-index: 10;
+    position: relative;
+    color: #fff;
+    text-align: center;
+}
+
+.parallax-header h2 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    background: linear-gradient(to right, #fff, #bfbfbf);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.parallax-header p {
+    font-size: 1.2rem;
+    color: #aaa;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.parallax-content {
+    max-width: 1400px;
+    margin: 0 auto;
+    width: 100%;
+    transform-style: preserve-3d;
+}
+
+.parallax-row {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    /* Allow wrapping on smaller screens */
+    margin-bottom: 3rem;
+}
+
+/* Ensure cards in parallax don't take full width but fixed width for the effect */
+.parallax-row .contract-card {
+    width: 350px;
+    flex-shrink: 0;
+}
+
+/* Mobile adjustments */
+@media (max-width: 768px) {
+    .hero-parallax-container {
+        height: auto;
+        padding-top: 5rem;
+    }
+
+    .parallax-header h2 {
+        font-size: 2rem;
+    }
+
+    .parallax-header {
+        margin-bottom: 15rem;
+        /* Increased significantly to compensate for -700px start */
+    }
+
+    .parallax-mobile-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 0.9rem;
+        padding: 0 0.4rem;
+    }
+
+    /* Reset desktop row styles for mobile if they leak, but we aren't using them in structure anymore */
+    .parallax-row {
+        display: none;
+    }
+
+    .parallax-mobile-grid .contract-card {
+        width: 100%;
+        max-width: none;
+    }
+}

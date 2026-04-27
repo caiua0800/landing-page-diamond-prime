@@ -1,0 +1,122 @@
+.footer-section {
+  padding: 10px 2%; /* Padding vertical reduzido */
+  background-color: #1D1D1F;
+  color: #a0a0a0;
+  border-top: 1px solid #333;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* --- CONTEÚDO PRINCIPAL (LOGO + LINKS) --- */
+.footer-main-content {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  margin-bottom: 20px;
+  flex-wrap: wrap; /* Permite quebrar em telas menores */
+}
+
+/* Coluna principal com a logo */
+.footer-brand-column {
+  flex: 1;
+  min-width: 10px; /* Largura mínima antes de quebrar */
+}
+
+.footer-logo {
+  max-width: 140px;
+  margin-bottom: 5px;
+}
+
+.footer-cnpj {
+  font-size: 0.9rem;
+  color: #777;
+}
+
+/* Grupo de colunas de links */
+.footer-links-group {
+  flex: 2;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.footer-column {
+  /* Alinhamento à esquerda por padrão */
+  text-align: left;
+}
+
+.footer-column h3 {
+  font-size: 1.1rem; /* Fonte menor */
+  font-weight: 600;
+  color: #ffffff;
+  margin-bottom: 5px;
+}
+
+.footer-column p, .footer-column a {
+  font-size: 0.9rem; /* Fonte menor */
+  line-height: 1.7;
+  color: #a0a0a0;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-column a:hover {
+  color: #DEAB43;
+}
+
+
+/* --- BARRA INFERIOR (NOTA + REDES SOCIAIS) --- */
+.footer-bottom {
+  padding-top: 20px;
+  border-top: 1px solid #333;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.footer-note {
+  font-size: 0.8rem;
+  color: #777;
+}
+
+.social-icons {
+  display: flex;
+  gap: 25px;
+}
+
+.social-icons a {
+  font-size: 1.1rem;
+  color: #a0a0a0;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #DEAB43;
+  transform: translateY(-3px);
+}
+
+/* --- RESPONSIVIDADE --- */
+@media (max-width: 768px) {
+  .footer-main-content {
+    flex-direction: column; /* Empilha a logo e os links */
+    align-items: center;
+    text-align: center;
+  }
+  .footer-links-group {
+    justify-content: center;
+    text-align: center;
+  }
+  .footer-column {
+    align-items: center;
+    text-align: center;
+  }
+  .footer-bottom {
+    flex-direction: column;
+  }
+}

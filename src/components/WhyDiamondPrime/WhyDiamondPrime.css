@@ -1,0 +1,128 @@
+.why-prime-section {
+  padding: 100px 6%;
+  background-color: #ffffff;
+  overflow: hidden;
+}
+
+.why-prime-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 60px;
+}
+
+/* --- COLUNA ESQUERDA (TEXTO) --- */
+.text-column {
+  flex: 1.5;
+  text-align: left;
+}
+
+.why-prime-title {
+  font-size: 2.8rem;
+  font-weight: 800;
+  color: #1D1D1F;
+  margin: 10px 0 20px 0;
+}
+
+.why-prime-paragraph {
+  font-size: 1.1rem;
+  color: #5a5a5c;
+  line-height: 1.8;
+  margin-bottom: 30px;
+  border-left: 2px solid #DEAB43;
+  padding-left: 20px;
+}
+
+.differentiators-list {
+  list-style: none;
+  padding: 0; margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.differentiators-list li {
+  font-size: 1.1rem;
+  color: #5a5a5c;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.list-icon {
+  color: #DEAB43;
+  font-size: 1.2rem;
+  width: 25px;
+  text-align: center;
+}
+
+/* --- COLUNA DIREITA (IMAGEM) --- */
+/* Imagem para Desktop */
+.image-column-desktop {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* Imagem para Mobile começa escondida */
+.image-column-mobile {
+  display: none;
+}
+
+.why-prime-diamond-image {
+  width: 100%;
+  max-width: 350px;
+  height: auto;
+  filter: drop-shadow(0px 10px 50px rgba(200, 150, 50, 0.2));
+}
+
+
+/* --- INÍCIO DA RESPONSIVIDADE --- */
+@media (max-width: 900px) {
+  .why-prime-container {
+    flex-direction: column;
+    gap: 30px; /* Reduz o gap no modo coluna */
+  }
+  
+  .text-column {
+    text-align: center;
+    order: 1; /* Garante que o texto venha primeiro */
+    width: 100%; /* Ocupa a largura total */
+  }
+
+  /* Esconde a imagem de desktop */
+  .image-column-desktop {
+    display: none;
+  }
+  /* Mostra a imagem de mobile */
+  .image-column-mobile {
+    display: block;
+    margin: 30px auto; /* Adiciona espaçamento vertical */
+  }
+
+  .why-prime-paragraph {
+    border-left: none;
+    padding-left: 0;
+    text-align: center;
+  }
+
+  .differentiators-list li {
+    justify-content: center;
+    text-align: left;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  .why-prime-diamond-image {
+    max-width: 50%; /* Reduz a imagem em telas bem pequenas */
+  }
+}
+
+@media (max-width: 480px) {
+  .why-prime-title {
+    font-size: 2.2rem;
+  }
+  .why-prime-diamond-image {
+    max-width: 80%; /* Reduz a imagem em telas bem pequenas */
+  }
+}

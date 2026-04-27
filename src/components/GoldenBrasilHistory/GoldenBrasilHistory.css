@@ -1,0 +1,181 @@
+/* --- ESTILOS PARA DESKTOP (Telas > 992px) --- */
+.gb-history-section {
+  position: relative;
+  padding: 1px 6%;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+.background-shape-desktop {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background-color: rgb(22, 27, 32);
+  z-index: 0;
+  clip-path: polygon(70% 0%, 100% 0, 100% 100%, 50% 100%);
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.shape-image {
+  width: 100%;
+  max-width: 650px; 
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.shape-image::after {
+  content: '';
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: linear-gradient(to right, rgba(18, 18, 18, 0.8), rgba(18, 18, 18, 0.4));
+}
+
+.gb-history-container {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.content-wrapper {
+  max-width: 530px;
+  text-align: left;
+}
+
+/* O banner de imagem mobile fica escondido no desktop */
+.mobile-image-banner {
+  display: none;
+}
+
+/* --- ESTILOS DE TEXTO (COMUNS) --- */
+.gb-history-title {
+  font-size: 2.8rem;
+  font-weight: 800;
+  color: #1D1D1F;
+  margin: 10px 0 20px 0;
+  width: 750px;
+}
+
+.gb-history-paragraph {
+  font-size: 1.1rem;
+  color: #5a5a5c;
+  line-height: 1.8;
+  margin-bottom: 40px;
+  width: 650px;
+}
+
+.timeline {
+  position: relative;
+  border-left: 2px solid #e8e8e8;
+  padding: 10px 0 10px 30px;
+  margin-left: 10px;
+}
+
+.timeline-item { position: relative; margin-bottom: 30px; }
+.timeline-item:last-child { margin-bottom: 0; }
+
+.timeline-dot {
+  position: absolute;
+  left: -41px; top: 5px;
+  width: 20px; height: 20px;
+  background-color: #ffffff;
+  border: 4px solid #DEAB43;
+  border-radius: 50%;
+}
+
+.timeline-year {
+  font-weight: 700;
+  color: #DEAB43;
+  margin-bottom: 5px;
+  display: block;
+}
+
+.timeline-event {
+  font-size: 1rem;
+  color: #5a5a5c;
+  line-height: 1.6;
+}
+
+.gb-history-quote {
+  font-size: 1.2rem;
+  font-style: italic;
+  color: #1D1D1F;
+  margin-top: 40px;
+  padding-left: 20px;
+  border-left: 3px solid #DEAB43;
+  margin-left: 10px;
+}
+
+/* --- INÍCIO DA RESPONSIVIDADE (NOVA LÓGICA) --- */
+@media (max-width: 992px) {
+  .gb-history-section {
+    display: block;
+    padding: 80px 6%; /* Adiciona padding para o conteúdo não colar nas bordas */
+    min-height: auto;
+  }
+
+  /* Esconde completamente a estrutura diagonal de desktop */
+  .background-shape-desktop {
+    display: none;
+  }
+
+  .gb-history-container {
+    width: 100%;
+  }
+
+  .content-wrapper {
+    max-width: 100%;
+  }
+
+  /* Mostra e estiliza o novo banner de imagem mobile */
+  .mobile-image-banner {
+    display: block;
+    width: 100%;
+    max-width: 300px;
+    height: 360px;
+    /* Controle de zoom da imagem */
+    background-size: 100%; 
+    background-position: center;
+    position: relative;
+    border-radius: 16px;
+    overflow: hidden;
+    margin: 40px auto; /* Centraliza e adiciona espaçamento */
+    transition: background-size 0.4s ease; /* Transição suave para o hover */
+  }
+
+  .mobile-image-banner:hover {
+    background-size: 125%; /* Efeito de zoom sutil no hover */
+  }
+
+  .mobile-image-banner::after {
+    content: '';
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(18, 18, 18, 0.3); /* Overlay mais suave */
+  }
+
+  /* Remove as larguras fixas dos textos */
+  .gb-history-title, .gb-history-paragraph {
+    width: auto;
+    text-align: center; /* Centraliza os textos */
+  }
+
+  .gb-history-quote {
+    text-align: center;
+    border-left: none;
+    padding-left: 0;
+    margin-left: 0;
+    border-top: 2px solid #DEAB43;
+    padding-top: 20px;
+  }
+}

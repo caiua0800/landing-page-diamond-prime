@@ -1,0 +1,25 @@
+{
+  "short_name": "Diamond Prime",
+  "name": "Diamond Prime by Golden Brasil",
+  "icons": [
+    {
+      "src": "diamond_prime_diamond_05 (2).png",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "diamond_prime_diamond_05 (2).png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "diamond_prime_diamond_05 (2).png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#1D1D1F",
+  "background_color": "#ffffff"
+}
