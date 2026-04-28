@@ -7,6 +7,7 @@ import HeroParallax from './components/HeroParallax';
 import Footer from '../Footer/Footer';
 import './SalesPage.css';
 import NewsSection from './components/NewsSection';
+import AboutGolden from './components/AboutGolden';
 
 const SalesPage = () => {
     const { contracts, loading, error } = useContracts();
@@ -21,6 +22,7 @@ const SalesPage = () => {
             {/* Show Parallax only when not loading for smooth effect */}
             {!loading && !error && <HeroParallax contracts={contracts} />}
             <NewsSection />
+            <AboutGolden />
             <Footer />
         </div>
     );
