@@ -64,8 +64,9 @@ const HeroSales = () => {
                     <h1>Invista na Eternidade</h1>
                     <p>
                         Adquira diamantes certificados internacionalmente e receba
-                        <strong> 2% de cashback mensal</strong> garantido em contrato.
-                        Segurança, liquidez e valorização em um único ativo.
+                        <strong> 2% de cashback mensal</strong> por 12 meses garantido em contrato.
+                        Um ativo físico com retorno mensal em cashback, garantido em contrato e com certificação IGL.
+                        <h4>  Tudo garantido em contrato: você sabe quanto recebe e quando recebe. </h4>
                     </p>
                     <button onClick={scrollToGrid} className="cta-button-primary">
                         Escolher Meu Diamante
