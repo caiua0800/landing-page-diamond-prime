@@ -158,6 +158,18 @@ const HeroParallax = ({ contracts = [] }) => {
           </motion.div>
         )}
       </div>
+      <div className="parallax-cta">
+        <button
+          className="cta-button-secondary"
+          onClick={() => {
+            document
+              .querySelector('.contract-grid')
+              ?.scrollIntoView({ behavior: 'smooth' });
+          }}
+        >
+          Fale conosco
+        </button>
+      </div>
     </div>
   );
 };
