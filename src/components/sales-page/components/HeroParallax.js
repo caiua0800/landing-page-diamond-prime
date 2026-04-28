@@ -167,7 +167,7 @@ const HeroParallax = ({ contracts = [] }) => {
               ?.scrollIntoView({ behavior: 'smooth' });
           }}
         >
-          Fale conosco
+          Compre já
         </button>
       </div>
     </div>
