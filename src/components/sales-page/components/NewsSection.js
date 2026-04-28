@@ -31,7 +31,7 @@ const NewsSection = () => {
             href={item.url}
             target="_blank"
             rel="noopener noreferrer"
-            className={`news-card ${index === 0 ? 'news-card-featured' : ''}`}
+            className="news-card"
           >
             <div className="news-image-wrapper">
               <img src={item.image} alt={item.title} className="news-image" />
