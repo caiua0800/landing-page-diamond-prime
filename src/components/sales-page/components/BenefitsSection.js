@@ -13,9 +13,9 @@ const BenefitsSection = () => {
     const benefits = [
         {
             icon: 'fa-solid fa-certificate',
-            title: 'Certificação GIA',
+            title: 'Certificação IGL',
             subtitle: 'Padrão Internacional',
-            description: 'Cada diamante vem com certificado GIA reconhecido mundialmente, garantindo qualidade e valorização.',
+            description: 'Cada diamante vem com certificado IGL, garantindo qualidade, autenticidade e valorização.',
             gradient: 'linear-gradient(135deg, #d4af37, #f2d06b)'
         },
         {
