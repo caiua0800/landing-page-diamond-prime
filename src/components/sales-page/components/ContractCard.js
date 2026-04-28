@@ -52,7 +52,7 @@ const ContractCard = ({ contract }) => {
                 </div>
 
                 <button className="card-button">
-                    Comprar Agora
+                    Escolher Diamante
                 </button>
             </div>
         </motion.div>

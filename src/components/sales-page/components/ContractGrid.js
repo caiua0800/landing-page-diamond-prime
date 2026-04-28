@@ -26,7 +26,7 @@ const ContractGrid = ({ contracts, loading, error }) => {
             <div className="section-header">
                 <h2>Oportunidades Disponíveis</h2>
                 <div className="underline"></div>
-                <p>Escolha o contrato ideal para o seu perfil de investimento</p>
+                <p>Escolha seu diamante e receba cashback mensal garantido em contrato</p>
             </div>
 
             <div className="contracts-grid">
