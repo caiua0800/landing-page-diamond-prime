@@ -36,7 +36,7 @@ const ContractCard = ({ contract }) => {
                 <div className="card-divider"></div>
 
                 <div className="card-price-container">
-                    <span className="price-label">Valor de Investimento</span>
+                    <span className="price-label">Valor de Aporte</span>
                     <span className="price-value">{formattedPrice}</span>
                 </div>
 

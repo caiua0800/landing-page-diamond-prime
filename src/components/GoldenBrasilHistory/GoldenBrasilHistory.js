@@ -7,7 +7,7 @@ const timelineData = [
   { year: '2019', event: 'Fundação da Golden Brasil, com a missão de democratizar o acesso a ativos de valor.' },
   { year: '2021', event: 'Expansão nacional, com a abertura de novos escritórios e solidificação da marca no mercado.' },
   { year: '2023', event: 'Marco de centenas de clientes ativos, consolidando uma comunidade forte e próspera.' },
-  { year: '2025', event: 'Lançamento do Diamond Prime, revolucionando o investimento em diamantes no Brasil.' }
+  { year: '2025', event: 'Lançamento do Diamond Prime, revolucionando o aporte em diamantes no Brasil.' }
 ];
 
 const GoldenBrasilHistory = () => {

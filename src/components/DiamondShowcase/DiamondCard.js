@@ -36,7 +36,7 @@ const DiamondCard = ({ contract }) => {
                 </p>
 
                 <div className="diamond-card-price-section">
-                    <span className="diamond-price-label">Valor de Investimento</span>
+                    <span className="diamond-price-label">Valor de Aporte</span>
                     <span className="diamond-price-value">{formattedPrice}</span>
                 </div>
 

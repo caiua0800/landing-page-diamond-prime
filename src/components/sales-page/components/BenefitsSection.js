@@ -22,7 +22,7 @@ const BenefitsSection = () => {
             icon: 'fa-solid fa-percentage',
             title: '2% ao Mês',
             subtitle: 'Garantido em Contrato',
-            description: 'Rentabilidade previsível e consistente. Seu patrimônio crescendo de forma segura e transparente.',
+            description: 'Valorização previsível e consistente. Seu patrimônio crescendo de forma segura e transparente.',
             gradient: 'linear-gradient(135deg, #d4af37, #f2d06b)'
         },
         {
@@ -77,7 +77,7 @@ const BenefitsSection = () => {
                 >
                     <span className="benefits-badge">Por que Diamond Prime?</span>
                     <h2>Proteja e Multiplique Seu Patrimônio</h2>
-                    <p>Investimento em diamantes com segurança, liquidez e rentabilidade garantida em contrato</p>
+                    <p>Aporte em diamantes com segurança, liquidez e valorização garantida em contrato</p>
                 </motion.div>
 
                 <div className="benefits-grid">

@@ -18,7 +18,7 @@ const testimonialsData = [
   { quote: "Receber o diamante em casa me deu total tranquilidade.", author: "Ana Carolina", status: "Cliente Prime" },
   { quote: "Meu patrimônio está crescendo de duas formas ao mesmo tempo!", author: "Fernando C.", status: "Cliente Prime" },
   { quote: "O cashback mensal é um diferencial incrível.", author: "Mariana A.", status: "Cliente Prime" },
-  { quote: "Muito além de um investimento, é um ativo real.", author: "Julio P.", status: "Cliente Prime" },
+  { quote: "Muito além de um aporte, é um ativo real.", author: "Julio P.", status: "Cliente Prime" },
   { quote: "A solidez da Golden Brasil foi decisiva para mim.", author: "Beatriz L.", status: "Cliente Prime" }
 ];
 
