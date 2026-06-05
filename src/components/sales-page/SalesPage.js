@@ -6,14 +6,15 @@ import HeroParallax from './components/HeroParallax';
 // import ContractGrid from './components/ContractGrid';
 import Footer from '../Footer/Footer';
 import './SalesPage.css';
+import './SalesPageLight.css';
 import NewsSection from './components/NewsSection';
 import AboutGolden from './components/AboutGolden';
 
-const SalesPage = () => {
+const SalesPage = ({ lightMode = false }) => {
     const { contracts, loading, error } = useContracts();
 
     return (
-        <div className="sales-page">
+        <div className={`sales-page${lightMode ? ' sales-page--light' : ''}`}>
             <HeroSales />
 
             {/* Benefits Section */}

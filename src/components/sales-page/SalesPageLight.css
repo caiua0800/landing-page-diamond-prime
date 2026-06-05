@@ -1,0 +1,398 @@
+/* =============================================================
+   Modo Claro — /modo-claro/diamantes
+   Mirrors the palette of landig-page-cpom/src/app/modo-claro/page.tsx
+   Base: #FAFAFA / #FFFFFF
+   Accents: #FFE066 (warm yellow), #FFF9E5 (cream), #D4AF37 (gold)
+   Text: #0A0A0A (primary), #8A6D1E (dark gold), #5A4A1E (muted gold)
+   ============================================================= */
+
+/* Root */
+.sales-page--light {
+    background-color: #FAFAFA;
+    color: #0A0A0A;
+}
+
+/* =========================
+   HERO SALES
+   ========================= */
+.sales-page--light .hero-sales {
+    background: linear-gradient(135deg, #FFF9E5 0%, #FFFDF5 60%, #FAFAFA 100%);
+    color: #0A0A0A;
+}
+
+.sales-page--light .hero-sales-header {
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.6) 0%, transparent 100%);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.sales-page--light .hero-header-logo span {
+    color: #0A0A0A;
+}
+
+.sales-page--light .hero-header-nav a,
+.sales-page--light .hero-header-nav button.hero-nav-link {
+    color: #5A4A1E;
+}
+
+.sales-page--light .hero-header-nav a:hover,
+.sales-page--light .hero-header-nav button.hero-nav-link:hover {
+    color: #8A6D1E;
+}
+
+.sales-page--light .hero-header-nav a::after,
+.sales-page--light .hero-header-nav button.hero-nav-link::after {
+    background: #8A6D1E;
+}
+
+.sales-page--light .brand-security {
+    color: #8A6D1E;
+}
+
+.sales-page--light .brand-security i {
+    color: #D4AF37;
+}
+
+.sales-page--light .hero-sales h1 {
+    background: linear-gradient(to right, #AA882E, #D4AF37, #8A6D1E);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.sales-page--light .hero-sales p {
+    color: #4B5563;
+}
+
+.sales-page--light .hero-sales strong {
+    color: #8A6D1E;
+}
+
+.sales-page--light .hero-sales h4 {
+    color: #0A0A0A;
+}
+
+/* =========================
+   BENEFITS SECTION
+   ========================= */
+.sales-page--light .benefits-section {
+    background: #FFFFFF;
+}
+
+.sales-page--light .benefits-overlay {
+    background: radial-gradient(circle at 50% 50%, rgba(255, 224, 102, 0.35) 0%, transparent 70%);
+}
+
+.sales-page--light .benefits-header h2 {
+    background: linear-gradient(to right, #0A0A0A, #5A4A1E);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.sales-page--light .benefits-header p {
+    color: #4B5563;
+}
+
+.sales-page--light .benefit-card {
+    background: #FAFAFA;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+
+.sales-page--light .benefit-card:hover {
+    border-color: rgba(212, 175, 55, 0.5);
+    background: #FFF9E5;
+    box-shadow:
+        0 20px 40px rgba(212, 175, 55, 0.15),
+        0 0 30px rgba(212, 175, 55, 0.1);
+}
+
+.sales-page--light .benefit-card h3 {
+    color: #0A0A0A;
+}
+
+.sales-page--light .benefit-subtitle {
+    color: #8A6D1E;
+}
+
+.sales-page--light .benefit-card p {
+    color: #4B5563;
+}
+
+.sales-page--light .cta-subtitle {
+    color: #6B7280;
+}
+
+/* =========================
+   HERO PARALLAX (catálogo)
+   ========================= */
+.sales-page--light .hero-parallax-container {
+    background: #FAFAFA;
+}
+
+.sales-page--light .parallax-header {
+    color: #0A0A0A;
+}
+
+.sales-page--light .parallax-header h2 {
+    background: linear-gradient(to right, #0A0A0A, #5A4A1E);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.sales-page--light .parallax-header p {
+    color: #4B5563;
+}
+
+.sales-page--light .parallax-sort-panel {
+    background: linear-gradient(180deg, #FFFFFF, #FFF9E5);
+    border: 1px solid rgba(212, 175, 55, 0.4);
+    box-shadow: 0 12px 35px rgba(212, 175, 55, 0.12);
+}
+
+.sales-page--light .parallax-sort-panel span {
+    color: #5A4A1E;
+}
+
+.sales-page--light .parallax-sort-panel button {
+    background: #FFFFFF;
+    color: #0A0A0A;
+    border: 1px solid rgba(212, 175, 55, 0.4);
+}
+
+.sales-page--light .parallax-sort-panel button.active,
+.sales-page--light .parallax-sort-panel button:hover {
+    background: linear-gradient(135deg, #D4AF37, #AA882E);
+    color: #FFFFFF;
+    border-color: #D4AF37;
+}
+
+.sales-page--light .parallax-empty-state {
+    background: #FFF9E5;
+    color: #5A4A1E;
+}
+
+/* =========================
+   CONTRACT CARD (diamantes)
+   ========================= */
+.sales-page--light .contract-card {
+    background: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.06);
+    box-shadow: 0 10px 30px rgba(212, 175, 55, 0.08);
+}
+
+.sales-page--light .card-badge {
+    background: #D4AF37;
+    color: #0A0A0A;
+}
+
+.sales-page--light .card-title {
+    color: #0A0A0A;
+}
+
+.sales-page--light .card-description {
+    color: #4B5563;
+}
+
+.sales-page--light .card-divider {
+    background: linear-gradient(to right, transparent, rgba(212, 175, 55, 0.35), transparent);
+}
+
+.sales-page--light .price-label {
+    color: #6B7280;
+}
+
+.sales-page--light .price-value {
+    color: #8A6D1E;
+}
+
+.sales-page--light .card-features {
+    background: #FFF9E5;
+    border: 1px solid rgba(212, 175, 55, 0.2);
+}
+
+.sales-page--light .feature {
+    color: #5A4A1E;
+}
+
+.sales-page--light .feature i {
+    color: #D4AF37;
+}
+
+.sales-page--light .card-button {
+    background: transparent;
+    border: 1px solid #D4AF37;
+    color: #8A6D1E;
+}
+
+.sales-page--light .card-button:hover {
+    background: #D4AF37;
+    color: #0A0A0A;
+}
+
+/* =========================
+   NEWS SECTION
+   ========================= */
+.sales-page--light .news-section {
+    background:
+        radial-gradient(circle at top, rgba(255, 224, 102, 0.45), transparent 35%),
+        #FFFFFF;
+    color: #0A0A0A;
+}
+
+.sales-page--light .news-header span {
+    color: #8A6D1E;
+}
+
+.sales-page--light .news-header h2 {
+    background: linear-gradient(to right, #0A0A0A, #5A4A1E);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.sales-page--light .news-header p {
+    color: #4B5563;
+}
+
+.sales-page--light .news-card {
+    background: #FAFAFA;
+    border: 1px solid rgba(0, 0, 0, 0.06);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.04);
+}
+
+.sales-page--light .news-card:hover {
+    border-color: rgba(212, 175, 55, 0.6);
+    box-shadow: 0 24px 60px rgba(212, 175, 55, 0.18);
+}
+
+.sales-page--light .news-image-wrapper {
+    background: #F3F4F6;
+}
+
+.sales-page--light .news-image-overlay {
+    background: linear-gradient(to bottom, transparent 35%, rgba(0, 0, 0, 0.45));
+}
+
+.sales-page--light .news-content h3 {
+    color: #0A0A0A;
+}
+
+.sales-page--light .news-content p {
+    color: #4B5563;
+}
+
+.sales-page--light .news-link {
+    color: #8A6D1E;
+}
+
+/* =========================
+   ABOUT GOLDEN
+   ========================= */
+.sales-page--light .about-golden {
+    background:
+        radial-gradient(circle at bottom right, rgba(255, 224, 102, 0.55), transparent 40%),
+        #FAFAFA;
+    color: #0A0A0A;
+}
+
+.sales-page--light .about-tag {
+    color: #8A6D1E;
+}
+
+.sales-page--light .about-left h2 {
+    background: linear-gradient(to right, #0A0A0A, #5A4A1E);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.sales-page--light .about-left p {
+    color: #4B5563;
+}
+
+.sales-page--light .about-stats strong {
+    color: #8A6D1E;
+}
+
+.sales-page--light .about-stats span {
+    color: #6B7280;
+}
+
+.sales-page--light .about-card {
+    background: linear-gradient(180deg, #FFE066 0%, #FFF3B0 60%, #FFE066 100%);
+    border: 1px solid rgba(212, 175, 55, 0.4);
+    box-shadow: 0 18px 50px rgba(212, 175, 55, 0.18);
+}
+
+.sales-page--light .about-card-glow {
+    background: radial-gradient(circle, rgba(212, 175, 55, 0.35), transparent 70%);
+}
+
+.sales-page--light .about-card h3 {
+    color: #0A0A0A;
+}
+
+.sales-page--light .about-card li {
+    color: #1F2937;
+}
+
+.sales-page--light .about-card li::before {
+    color: #8A6D1E;
+}
+
+.sales-page--light .about-cta {
+    background: linear-gradient(135deg, #0A0A0A, #1F2937);
+    color: #FFFFFF;
+}
+
+.sales-page--light .about-cta:hover {
+    background: linear-gradient(135deg, #D4AF37, #AA882E);
+    color: #0A0A0A;
+    box-shadow: 0 14px 40px rgba(212, 175, 55, 0.35);
+}
+
+/* =========================
+   FOOTER
+   ========================= */
+.sales-page--light .footer-section {
+    background-color: #FFE066;
+    color: #5A4A1E;
+    border-top: 1px solid rgba(212, 175, 55, 0.4);
+}
+
+.sales-page--light .footer-cnpj {
+    color: #5A4A1E;
+}
+
+.sales-page--light .footer-column h3 {
+    color: #0A0A0A;
+}
+
+.sales-page--light .footer-column p,
+.sales-page--light .footer-column a {
+    color: #5A4A1E;
+}
+
+.sales-page--light .footer-column a:hover {
+    color: #8A6D1E;
+}
+
+.sales-page--light .footer-bottom {
+    border-top: 1px solid rgba(138, 109, 30, 0.25);
+}
+
+.sales-page--light .footer-note {
+    color: #5A4A1E;
+}
+
+.sales-page--light .social-icons a {
+    color: #5A4A1E;
+}
+
+.sales-page--light .social-icons a:hover {
+    color: #8A6D1E;
+}
