@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import './ContractCard.css';
+import { openWhatsApp } from '../utils/whatsapp';
 
 const ContractCard = ({ contract }) => {
     const { name, description, unityPrice, monthlyPercentage, mediaUrls } = contract;
@@ -51,7 +52,7 @@ const ContractCard = ({ contract }) => {
                     </div>
                 </div>
 
-                <button className="card-button">
+                <button className="card-button" onClick={openWhatsApp}>
                     Escolher Diamante
                 </button>
             </div>

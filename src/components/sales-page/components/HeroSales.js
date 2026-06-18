@@ -1,28 +1,22 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import './HeroSales.css';
+import { openWhatsApp } from '../utils/whatsapp';
 import diamondImage from '../../../img/diamond_prime_diamond_02.png';
 import goldenLogo from '../../../img/logo-golden-ouro2.png';
 
 const HeroSales = () => {
-    const scrollToGrid = () => {
-        const gridSection = document.getElementById('contracts-grid');
-        if (gridSection) {
-            gridSection.scrollIntoView({ behavior: 'smooth' });
-        }
-    };
-
-    const scrollToFooter = () => {
-        const footer = document.querySelector('footer');
-        if (footer) {
-            footer.scrollIntoView({ behavior: 'smooth' });
-        }
-    };
-
     const scrollToCatalog = () => {
         const catalog = document.querySelector('.hero-parallax-container');
         if (catalog) {
             catalog.scrollIntoView({ behavior: 'smooth' });
+        }
+    };
+
+    const scrollToBenefits = () => {
+        const benefits = document.getElementById('benefits');
+        if (benefits) {
+            benefits.scrollIntoView({ behavior: 'smooth' });
         }
     };
 
@@ -42,9 +36,9 @@ const HeroSales = () => {
                     </div>
                     <nav className="hero-header-nav">
                         <a href="https://www.diamondprime.com.br/" target="_blank" rel="noopener noreferrer">Sobre</a>
-                        <a href="#benefits">Vantagens</a>
+                        <button onClick={scrollToBenefits} className="hero-nav-link">Vantagens</button>
                         <button onClick={scrollToCatalog} className="hero-nav-link">Catálogo</button>
-                        <button onClick={scrollToFooter} className="hero-nav-contact">Contato</button>
+                        <button onClick={openWhatsApp} className="hero-nav-contact">Contato</button>
                     </nav>
                 </div>
             </motion.header>
@@ -68,7 +62,7 @@ const HeroSales = () => {
                         Um ativo físico com retorno mensal em cashback, garantido em contrato e com certificação IGL.
                         <h4>  Tudo garantido em contrato: você sabe quanto recebe e quando recebe. </h4>
                     </p>
-                    <button onClick={scrollToGrid} className="cta-button-primary">
+                    <button onClick={scrollToCatalog} className="cta-button-primary">
                         Escolher Meu Diamante
                     </button>
                 </motion.div>

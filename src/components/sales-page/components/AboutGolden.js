@@ -1,5 +1,6 @@
 import React from 'react';
 import './AboutGolden.css';
+import { openWhatsApp } from '../utils/whatsapp';
 
 const AboutGolden = () => {
   return (
@@ -55,7 +56,7 @@ const AboutGolden = () => {
               <li>Curadoria especializada</li>
             </ul>
 
-            <button className="about-cta">
+            <button className="about-cta" onClick={openWhatsApp}>
               Ver diamantes disponíveis
             </button>
           </div>

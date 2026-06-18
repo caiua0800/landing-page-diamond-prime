@@ -58,7 +58,7 @@ const BenefitsSection = () => {
     };
 
     return (
-        <section className="benefits-section">
+        <section id="benefits" className="benefits-section">
             <div className="benefits-overlay"></div>
 
             <motion.div

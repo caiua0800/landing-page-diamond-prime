@@ -2,6 +2,7 @@ import React, { useMemo, useRef } from 'react';
 import { motion, useScroll, useTransform, useSpring } from 'framer-motion';
 import ContractCard from './ContractCard';
 import './HeroParallax.css';
+import { openWhatsApp } from '../utils/whatsapp';
 
 const HeroParallax = ({ contracts = [] }) => {
   const [isMobile, setIsMobile] = React.useState(() => {
@@ -161,11 +162,7 @@ const HeroParallax = ({ contracts = [] }) => {
       <div className="parallax-cta">
         <button
           className="cta-button-secondary"
-          onClick={() => {
-            document
-              .querySelector('.contract-grid')
-              ?.scrollIntoView({ behavior: 'smooth' });
-          }}
+          onClick={openWhatsApp}
         >
           Compre já
         </button>
