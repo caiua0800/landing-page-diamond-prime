@@ -1,5 +1,5 @@
 // Contato de vendas Diamond Prime
-const WHATSAPP_PHONE = '5547992498044';
+const WHATSAPP_PHONE = '5547992276449';
 const WHATSAPP_MESSAGE =
     'Olá, vim pela landing page do diamond prime, gostaria de saber mais sobre os diamantes';
 
